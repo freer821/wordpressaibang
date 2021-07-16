@@ -20,22 +20,24 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', getenv('WORDPRESS_DB_NAME') ?: '' );
+define( 'DB_NAME', 'wordpress_aibang');
 
 /** MySQL database username */
-define( 'DB_USER', getenv('WORDPRESS_DB_USERNAME') ?: '');
+define( 'DB_USER', 'root');
 
 /** MySQL database password */
-define( 'DB_PASSWORD', getenv('WORDPRESS_DB_PASSWORD') ?: '' );
+define( 'DB_PASSWORD', 'qwer1234@');
 
 /** MySQL hostname */
-define( 'DB_HOST', getenv('WORDPRESS_DB_HOST') ?: '' );
+define( 'DB_HOST', 'db-mariadb');
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+define( 'DB_COLLATE', '');
+
+define('ENABLE_CACHE', TRUE);
 
 /**#@+
  * Authentication Unique Keys and Salts.
